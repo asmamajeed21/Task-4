@@ -1,0 +1,144 @@
+:root {
+    --primary: #0078d7;
+    --primary-dark: #005a9e;
+    --background: #f3f7fa;
+    --card: #ffffff;
+    --text: #222;
+    --muted: #666;
+    --border: #d7e0ea;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+}
+
+
+#main-header {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid var(--primary-dark);
+}
+
+    #main-header .title {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    #main-header .tagline {
+        display: block;
+        font-weight: 500;
+        color: #e3eefc;
+        margin-top: 5px;
+    }
+
+#main-nav {
+    background-color: var(--primary-dark);
+    padding: 10px 0;
+    text-align: center;
+}
+
+    #main-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #main-nav li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    #main-nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+        #main-nav a:hover {
+            text-decoration: underline;
+        }
+
+
+#container {
+    width: 1000px;
+    margin: 20px auto;
+}
+
+#sidebar {
+    width: 260px;
+    float: left;
+}
+
+#content {
+    margin-left: 280px;
+}
+
+.box {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 18px;
+}
+
+
+.section-title {
+    color: var(--primary-dark);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 4px;
+    font-weight: 700;
+}
+
+
+.highlight {
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+
+.post-title {
+    color: var(--primary-dark);
+    font-weight: 700;
+    margin-top: 0;
+}
+
+
+.meta {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+
+#main-footer {
+    clear: both;
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+
+.author {
+    font-weight: bold;
+}
+
+
+@media (max-width: 800px) {
+    #container {
+        width: 95%;
+    }
+
+    #sidebar, #content {
+        float: none;
+        width: auto;
+        margin-left: 0;
+    }
+}
